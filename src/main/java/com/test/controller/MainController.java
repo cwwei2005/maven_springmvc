@@ -7,10 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -31,6 +28,17 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping(value = "/json", method = RequestMethod.GET)
+    @ResponseBody
+    public UserEntity getInJSON() {
+        System.out.println("-----请求json数据--------");
+        List<UserEntity> userList = userRepository.findAll();
+        if (userList != null && userList.size()>0){
+            userList.get(0).setBlogById(null);//
+            return userList.get(0);
+        }
+        return new UserEntity();
+    }
 
 
 

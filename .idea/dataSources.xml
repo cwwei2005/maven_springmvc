@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="mydata@localhost" uuid="5d8ed254-7f3a-4aff-8361-583db3cbaa29">
+    <data-source source="LOCAL" name="mydata@localhost" uuid="0df28340-e141-44e2-8be1-6cd1693f6cbb">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
@@ -14,19 +14,6 @@
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
       </driver-properties>
-    </data-source>
-    <data-source source="LOCAL" name="defaultPersistenceUnit/Hibernate" uuid="fee0ab72-4075-4179-98b8-154cfe5a6b70">
-      <imported>true</imported>
-      <configured-by-url>true</configured-by-url>
-      <remarks>$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml</remarks>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/mydata?useSSL=false&amp;serverTimezone=UTC</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="defaultPersistenceUnit/Hibernate" uuid="505a7a24-030d-4625-b0d7-e6323f3fdc9a">
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml</remarks>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/mydata?useSSL=false&amp;serverTimezone=UTC</jdbc-url>
     </data-source>
   </component>
 </project>
